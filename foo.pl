@@ -7,7 +7,6 @@ my @WORDS = qw(hello how are you today fantasy rumble forward down fast);
 
 my $sh = Term::Shelly->new();
 
-if (0) {
 $sh->out(
 "This is a demo of Term::Shelly. It is designed to show you some of the
 features of it. For this demo there is only a short number of features
@@ -20,7 +19,6 @@ completion system. The following words can be tab completed:
 " . join(" ", @WORDS)."
 Commands must start with a / (forward slash) and be at the beginning of 
 the line.");
-}
 
 $sh->{"completion_function"} = \&completer;
 $sh->prompt("Foo> ");
